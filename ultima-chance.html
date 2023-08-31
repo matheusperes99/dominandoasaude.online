@@ -2,6 +2,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
 <head>
+    # Se o arquivo solicitado não existe como um arquivo regular (!-f)...
+# E não é um diretório (!-d)...
+# E existe um arquivo com a extensão .html correspondente...
+# Então, reescreva a URL para adicionar a extensão .html.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L,QSA]
+
+# Redireciona permanentemente (301) de example.com/page.html para example.com/page.
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
     <!-- Meta Pixel Code -->
 <script>
     !function(f,b,e,v,n,t,s)
