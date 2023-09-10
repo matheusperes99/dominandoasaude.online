@@ -2,6 +2,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+	<head>
+<script type="text/javascript">
+var newUrl = location.pathname + location.search;
+
+(function(window, location) {
+history.replaceState(null, document.title, newUrl+"#!/backbutton");
+history.pushState(null, document.title, newUrl);
+window.addEventListener("popstate", function() {
+if(location.hash === "#!/backbutton") {
+history.replaceState(null, document.title, newUrl);
+setTimeout(function(){
+location.replace("https://dominandoasaude.online/chance-unica.html");
+},0);
+}
+}, false);
+}(window, location));
+</script>
 	<meta charset="UTF-8">
 		<title>upsell-abacaxi &#8211; My Blog</title>
 <meta name='robots' content='max-image-preview:large' />
