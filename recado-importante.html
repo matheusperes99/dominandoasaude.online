@@ -1,33 +1,14 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-	<meta charset="UTF-8">
-	<script type="text/javascript">
-		var newUrl = location.pathname + location.search;
-		
-		(function(window, location) {
-		history.replaceState(null, document.title, newUrl+"#!/backbutton");
-		history.pushState(null, document.title, newUrl);
-		window.addEventListener("popstate", function() {
-		if(location.hash === "#!/backbutton") {
-		history.replaceState(null, document.title, newUrl);
-		setTimeout(function(){
-		location.replace("https://dominandoasaude.online/chance-unica.html");
-		},0);
-		}
-		}, false);
-		}(window, location));
-		</script>
-		<title> Recado Importante</title>
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+	
+		<title>NÃO FECHE ESSA PÁGINA</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CUrbanist%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CUrbanist%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CUrbanist%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /></noscript>
 <meta name='robots' content='max-image-preview:large' />
-<link rel="alternate" type="application/rss+xml" title="Feed para My Blog &raquo;" href="https://dominandoasaude.online/recado-importante.html" />
-<link rel="alternate" type="application/rss+xml" title="Feed de comentários para My Blog &raquo;" href="https://dominandoasaude.online/recado-importante" />
-<script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/protocolodoabacaxi.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
-/*! This file is auto-generated */
-!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
-</script>
+<script type="rocketlazyloadscript" data-rocket-type='application/javascript'>console.log('PixelYourSite Free version 9.4.2');</script>
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Feed para  &raquo;" href="https://cuidadosemdia.online/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para  &raquo;" href="https://cuidadosemdia.online/comments/feed/" />
 <style>
 img.wp-smiley,
 img.emoji {
@@ -42,7 +23,7 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-	<link rel='stylesheet' id='wp-block-library-css' href='https://protocolodoabacaxi.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.1' media='all' />
+	<link rel='stylesheet' id='wp-block-library-css' href='https://cuidadosemdia.online/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2' media='all' />
 <style id='classic-theme-styles-inline-css'>
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -54,313 +35,153 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel='stylesheet' id='hello-elementor-css' href='https://protocolodoabacaxi.com/wp-content/themes/hello-elementor/style.min.css?ver=2.8.1' media='all' />
-<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://protocolodoabacaxi.com/wp-content/themes/hello-elementor/theme.min.css?ver=2.8.1' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css' href='https://protocolodoabacaxi.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.15.3' media='all' />
-<link rel='stylesheet' id='elementor-post-5-css' href='https://protocolodoabacaxi.com/wp-content/uploads/elementor/css/post-5.css?ver=1693503117' media='all' />
-<link rel='stylesheet' id='elementor-icons-css' href='https://protocolodoabacaxi.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.21.0' media='all' />
-<link rel='stylesheet' id='swiper-css' href='https://protocolodoabacaxi.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
-<link rel='stylesheet' id='elementor-global-css' href='https://protocolodoabacaxi.com/wp-content/uploads/elementor/css/global.css?ver=1693513426' media='all' />
-<link rel='stylesheet' id='elementor-post-171-css' href='https://protocolodoabacaxi.com/wp-content/uploads/elementor/css/post-171.css?ver=1693544660' media='all' />
-<link rel='stylesheet' id='eael-general-css' href='https://protocolodoabacaxi.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=5.8.7' media='all' />
-<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.3.1' media='all' />
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src='https://protocolodoabacaxi.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
-<script src='https://protocolodoabacaxi.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
-<link rel="https://api.w.org/" href="https://protocolodoabacaxi.com/wp-json/" /><link rel="alternate" type="application/json" href="https://protocolodoabacaxi.com/wp-json/wp/v2/pages/171" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://protocolodoabacaxi.com/xmlrpc.php?rsd" />
-<link rel="alternate" type="application/json+oembed" href="https://protocolodoabacaxi.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprotocolodoabacaxi.com%2Fupsell-abacaxi%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://protocolodoabacaxi.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprotocolodoabacaxi.com%2Fupsell-abacaxi%2F&#038;format=xml" />
-<meta name="generator" content="Elementor 3.15.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
-<body data-rsssl=1 class="page-template page-template-elementor_canvas page page-id-171 elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-171">
+<link rel='stylesheet' id='jquery-ui-core-css' href='https://cuidadosemdia.online/wp-content/plugins/smartfunnel/assets/jquery-ui-1.12.0.custom/jquery-ui.min.css?ver=6.3.2' media='all' />
+<link rel='stylesheet' id='hello-elementor-css' href='https://cuidadosemdia.online/wp-content/themes/hello-elementor/style.min.css?ver=2.8.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://cuidadosemdia.online/wp-content/themes/hello-elementor/theme.min.css?ver=2.8.1' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://cuidadosemdia.online/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.15.3' media='all' />
+<link rel='stylesheet' id='elementor-post-8-css' href='https://cuidadosemdia.online/wp-content/uploads/elementor/css/post-8.css?ver=1692809104' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-css' href='https://cuidadosemdia.online/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1695989325' media='all' />
+<link data-minify="1" rel='stylesheet' id='swiper-css' href='https://cuidadosemdia.online/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1695989325' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://cuidadosemdia.online/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.7.3' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://cuidadosemdia.online/wp-content/uploads/elementor/css/global.css?ver=1692809104' media='all' />
+<link rel='stylesheet' id='elementor-post-95-css' href='https://cuidadosemdia.online/wp-content/uploads/elementor/css/post-95.css?ver=1696112072' media='all' />
+</script>
+<meta name="generator" content="Elementor 3.15.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body data-rsssl=1 class="page-template-default page page-id-95 elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-95">
+			<div data-elementor-type="wp-page" data-elementor-id="95" class="elementor elementor-95">
+							<div class="elementor-element elementor-element-3a0f707 e-flex e-con-boxed e-con" data-id="3a0f707" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-36b92acd elementor-widget elementor-widget-heading" data-id="36b92acd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.15.0 - 20-08-2023 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">⚠️ NÃO FECHE NEM ATUALIZE ESTA PÁGINA</h2>		</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-50960ce1 e-flex e-con-boxed e-con" data-id="50960ce1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4e91b20d elementor-widget elementor-widget-heading" data-id="4e91b20d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">ESPERA!<br>
+SUA COMPRA ESTÁ<br> <b style="color:#FF8800;">QUASE CONCLUÍDA!</b></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5373492a elementor-widget elementor-widget-heading" data-id="5373492a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Por favor, assista a mensagem<br> importante abaixo</h2>		</div>
+				</div>
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1aa14b72 elementor-widget-mobile__width-inherit elementor-widget__width-inherit elementor-widget elementor-widget-html" data-id="1aa14b72" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+          <div id="vid_6530595da1e702000a3fb525" style="position:relative;width:100%;padding: 100% 0 0;"><img id="thumb_6530595da1e702000a3fb525" src="https://images.converteai.net/5ed85bd4-937e-4cf3-89d5-cbf60db1fc80/players/6530595da1e702000a3fb525/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_6530595da1e702000a3fb525" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_6530595da1e702000a3fb525">var s=document.createElement("script");s.src="https://scripts.converteai.net/5ed85bd4-937e-4cf3-89d5-cbf60db1fc80/players/6530595da1e702000a3fb525/player.js",s.async=!0,document.head.appendChild(s);</script>
+			<style>
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+  }
 
-			<div data-elementor-type="wp-page" data-elementor-id="171" class="elementor elementor-171">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-5a929d6f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5a929d6f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4e1103bd" data-id="4e1103bd" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-40a6855b elementor-widget elementor-widget-text-editor" data-id="40a6855b" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.15.0 - 20-08-2023 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p><b>🔴 ATENÇÃO:</b> Não feche ou atualize essa página, isso pode gerar erros na sua compra.</p>						</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-668c5a9a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="668c5a9a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-72435ecd" data-id="72435ecd" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-762ef13d elementor-widget elementor-widget-progress" data-id="762ef13d" data-element_type="widget" data-widget_type="progress.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.15.0 - 20-08-2023 */
-.elementor-widget-progress{text-align:left}.elementor-progress-wrapper{position:relative;background-color:#eee;color:#fff;height:100%;border-radius:2px}.elementor-progress-bar{display:flex;background-color:#69727d;width:0;font-size:11px;height:30px;line-height:30px;border-radius:2px;transition:width 1s ease-in-out}.elementor-progress-text{flex-grow:1;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;padding-left:15px}.elementor-progress-percentage{padding-right:15px}.elementor-widget-progress .elementor-progress-wrapper.progress-info .elementor-progress-bar{background-color:#5bc0de}.elementor-widget-progress .elementor-progress-wrapper.progress-success .elementor-progress-bar{background-color:#5cb85c}.elementor-widget-progress .elementor-progress-wrapper.progress-warning .elementor-progress-bar{background-color:#f0ad4e}.elementor-widget-progress .elementor-progress-wrapper.progress-danger .elementor-progress-bar{background-color:#d9534f}.elementor-progress .elementor-title{display:block}@media (max-width:767px){.elementor-progress-text{padding-left:10px}}.e-con-inner .elementor-progress-wrapper,.e-con .elementor-progress-wrapper{height:auto}</style>
-		<div class="elementor-progress-wrapper progress-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
-			<div class="elementor-progress-bar" data-max="70">
-				<span class="elementor-progress-text"></span>
-									<span class="elementor-progress-percentage">70%</span>
-							</div>
-		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-452f9c60 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="452f9c60" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-23691c0a" data-id="23691c0a" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-7591123b elementor-widget elementor-widget-text-editor" data-id="7591123b" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Tenho um recado importante de 1 minuto pra você&#8230; Assista o vídeo abaixo&#8230;</p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-1341b62 elementor-widget elementor-widget-html" data-id="1341b62" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-					<div id="vid_6504e6ab909f89000a906969" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_6504e6ab909f89000a906969" src="https://images.converteai.net/dc2bee22-f6b3-41ae-b28c-3a61aaac8be4/players/6504e6ab909f89000a906969/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_6504e6ab909f89000a906969" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_6504e6ab909f89000a906969">var s=document.createElement("script");s.src="https://scripts.converteai.net/dc2bee22-f6b3-41ae-b28c-3a61aaac8be4/players/6504e6ab909f89000a906969/player.js",s.async=!0,document.head.appendChild(s);</script>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-4bd5fc7b esconder elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4bd5fc7b" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3798ddc6" data-id="3798ddc6" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-3f8275ef elementor-align-center botao-pulse elementor-widget elementor-widget-button" data-id="3f8275ef" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://app.doppus.com/modal/234u293476">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">EU QUERO!</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-3e192a4d elementor-align-center elementor-widget elementor-widget-button" data-id="3e192a4d" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://dominandoasaude.online/chance-unica.html">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">NÃO QUERO </span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-a44fce4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a44fce4" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0a6f6ea" data-id="0a6f6ea" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-4c5cc52b elementor-widget elementor-widget-html" data-id="4c5cc52b" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  .button {
+    display: none; /* Inicialmente, os botões estarão ocultos */
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 8px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    animation: pulsate 2s infinite;
+  }
+
+  .green-button {
+    background-color: #00FF00;
+    color: #FFFFFF;
+    animation-delay: 1s;
+  }
+
+  .red-button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    animation-delay: 1s;
+  }
+
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>
 </head>
+<body>
+<div class="button-container">
+  <a href="https://app.doppus.com/modal/234u293476">
+    <button class="button green-button" id="green-button">EU ACEITO</button>
+  </a>
+  <a href="https://dominandoasaude.online/chance-unica.html">
+    <button class="button red-button" id="red-button">EU NÃO ACEITO</button>
+  </a>
+</div>
 
 <script>
-$('.esconder').hide();
-setTimeout(function() {
-$('.esconder').fadeIn('slow');
-}, 191 * 1 * 1000); // 780 é a quantidade em segundos do delay
+  // Função para exibir os botões após 2 minutos e 40 segundos
+  setTimeout(function() {
+    document.getElementById('green-button').style.display = 'block';
+    document.getElementById('red-button').style.display = 'block';
+  }, 166000); // 160000 milissegundos = 2 minutos e 40 segundos
 </script>
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var newUrl = location.pathname + location.search;
 
-<style>
-/*Botão Pulsa*/
-.box-pulse a {
-  
-  display: inline-block;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+(function(window, location) {
+history.replaceState(null, document.title, newUrl+"#!/backbutton");
+history.pushState(null, document.title, newUrl);
+window.addEventListener("popstate", function() {
+if(location.hash === "#!/backbutton") {
+history.replaceState(null, document.title, newUrl);
+setTimeout(function(){
+location.replace("https://dominandoasaude.online/chance-unica.html");
+},0);
 }
-.botao-pulse {
-  
-  -webkit-animation: pulse 1s ease infinite;
-  -moz-animation: pulse 1s ease infinite;
-  -ms-animation: pulse 1s ease infinite;
-  -o-animation: pulse 1s ease infinite;
-  animation: pulse 1s ease infinite;
-}
-.botao-pulse:hover {
-  color: #fff;
-}
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-  }
-  25% {
-    -webkit-transform: scale(1.1);
-  }
-  50% {
-    -webkit-transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-  }
-}
-@-moz-keyframes pulse {
-  0% {
-    -moz-transform: scale(1);
-  }
-  25% {
-    -moz-transform: scale(1.1);
-  }
-  50% {
-    -moz-transform: scale(1);
-  }
-  100% {
-    -moz-transform: scale(1);
-  }
-}
-@-ms-keyframes pulse {
-  0% {
-    -ms-transform: scale(1);
-  }
-  25% {
-    -ms-transform: scale(1.1);
-  }
-  50% {
-    -ms-transform: scale(1);
-  }
-  100% {
-    -ms-transform: scale(1);
-  }
-}
-@-o-keyframes pulse {
-  
-  0% { -o-transform: scale(1); }
-  25% { -o-transform: scale(1.1); }
-  50% { -o-transform: scale(1); }
-  100% { -o-transform: scale(1); } 
-}
-@keyframes pulse { 
-  0% {transform: scale(1);}
-  50% {transform: scale(1.1);}
-  100% {transform: scale(1);}
-}
-/*Botão Pulsa*/
-</style>		</div>
-				</div>
-				<div class="elementor-element elementor-element-332d21d elementor-widget elementor-widget-html" data-id="332d21d" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-691155209"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-691155209');
+}, false);
+}(window, location));
 </script>
-
-<!-- Event snippet for Compra - Banana conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-691155209/ZRWtCIPNh8YYEIniyMkC',
-      'transaction_id': ''
-  });
-</script>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-							</div>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
-<script>
-    var url_domain = window.location.hostname;
-        console.log(url_domain);
-            // console.log(result);
-            var utm_term = undefined;
-        
-            var url_string = window.location.href
-            var url = new URL(url_string);
-            var utm_campaign_value = url.searchParams.get("utm_campaign");
-            var url_domain = window.location.hostname;
-
-            if(utm_term == undefined){
-                var utm_campaign = "xcon="+utm_campaign_value;
-            }
-            function setUrlParams2(el) {
-            var term = utm_campaign;
-               if (el.href.indexOf('#') == -1) {
-                     var src = "";
-                    var querystring = location.search
-                    var querystring_without_int_mark = querystring.split("?", 2)[1]
-
-                    var existsUrl = el.href;
-                    var existsquerystring = existsUrl.split("?", 2)[1]
-
-                    // console.log(querystring_without_int_mark, existsquerystring)
-
-                    if (existsquerystring === undefined && querystring_without_int_mark !== undefined) {
-                        el.href = existsUrl.split("?", 2)[0] + '?' + querystring_without_int_mark+"&"+utm_campaign;
-                        return;
-                    }
-                    if (existsquerystring !== undefined && querystring_without_int_mark !== undefined) {
-                        el.href = existsUrl.split("?", 2)[0] + '?' + existsquerystring + '&' + querystring_without_int_mark+"&"+utm_campaign;
-                        return;
-                    }
-
-                    if (querystring_without_int_mark !== undefined) {
-                        el.href = existsUrl.split("?", 2)[0] + '?' + existsquerystring + '&' + querystring_without_int_mark+"&"+utm_campaign;
-                    }
-                    if (querystring_without_int_mark == undefined && existsquerystring == undefined) {
-                        el.href = existsUrl;
-                    }
-                    if (existsquerystring !== undefined) {
-                        el.href = existsUrl;
-                    }
-
-                    console.log('url: '+existsUrl)
-                }
-            }
-            var links = document.querySelectorAll('a');
-
-            links.forEach(setUrlParams2);
-
-
-</script>
-<script src='https://protocolodoabacaxi.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
-<script id='eael-general-js-extra'>
-var localize = {"ajaxurl":"https:\/\/protocolodoabacaxi.com\/wp-admin\/admin-ajax.php","nonce":"8a4a0ad37f","i18n":{"added":"Adicionado ","compare":"Comparar","loading":"Carregando..."},"eael_translate_text":{"required_text":"\u00e9 um campo obrigat\u00f3rio","invalid_text":"Inv\u00e1lido","billing_text":"Faturamento","shipping_text":"Envio","fg_mfp_counter_text":"de"},"page_permalink":"https:\/\/protocolodoabacaxi.com\/upsell-abacaxi\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Celular em modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular em modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Paisagem do tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
-</script>
-<script src='https://protocolodoabacaxi.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=5.8.7' id='eael-general-js'></script>
-<script src='https://protocolodoabacaxi.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.15.3' id='elementor-webpack-runtime-js'></script>
-<script src='https://protocolodoabacaxi.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.15.3' id='elementor-frontend-modules-js'></script>
-<script src='https://protocolodoabacaxi.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
-<script src='https://protocolodoabacaxi.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
-<script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular em modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular em modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Paisagem do tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.15.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"additional_custom_breakpoints":true,"e_swiper_latest":true,"hello-theme-header-footer":true,"landing-pages":true,"e_global_styleguide":true},"urls":{"assets":"https:\/\/protocolodoabacaxi.com\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":171,"title":"upsell-abacaxi%20%E2%80%93%20My%20Blog","excerpt":"","featuredImage":false}};
-</script>
-<script src='https://protocolodoabacaxi.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.15.3' id='elementor-frontend-js'></script>
+</div>
 <!-- Meta Pixel Code -->
 <script>
-	!function(f,b,e,v,n,t,s)
-	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	n.queue=[];t=b.createElement(e);t.async=!0;
-	t.src=v;s=b.getElementsByTagName(e)[0];
-	s.parentNode.insertBefore(t,s)}(window, document,'script',
-	'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '3564213133796445');
-	fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-	src="https://www.facebook.com/tr?id=3564213133796445&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-	<!-- SNIPPET DOPPUS -->
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3564213133796445');
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3564213133796445&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- SNIPPET DOPPUS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script defer="defer">function r(a){if("undefined"!==$.type(a.data)&&"array"===$.type(a.data)&&2===a.data.length)try{for(;(el=$('*:contains("'+a.data[0]+'")').last())&&el&&el.length;)console.log(a.data,el),el.html(el.html().replace(a.data[0],a.data[1]));for(;(lk=$('a[href$="'+a.data[0]+'"]:last'))&&lk&&lk.length;)console.log(a.data,lk),lk.attr("href",a.data[1]),lk.attr("target",a.data[0].toLowerCase().indexOf("modal")>-1?"_self":"_top");for(;(im=$('img[src$="'+a.data[0]+'"]'))&&im&&im.length;)console.log(a.data,im),im.attr("src",a.data[1])}catch(t){console.log("jquery.error",t),document.body.innerHTML=document.body.getInnerHTML().replaceAll(a.data[0],a.data[1])}}window.addEventListener("message",r,!1);</script>
 <!-- FIM SNIPPET -->
-	</body>
+
+</body>
 </html>
