@@ -777,6 +777,22 @@ Você precisa estar logado para comentar.
 </div>
 </div>
 </div>
+<script type="text/javascript">
+var newUrl = location.pathname + location.search;
+
+(function(window, location) {
+history.replaceState(null, document.title, newUrl+"#!/backbutton");
+history.pushState(null, document.title, newUrl);
+window.addEventListener("popstate", function() {
+if(location.hash === "#!/backbutton") {
+history.replaceState(null, document.title, newUrl);
+setTimeout(function(){
+location.replace("https://dominandoasaude.online/ultima-chance.html");
+},0);
+}
+}, false);
+}(window, location));
+</script>
 </div>
 <!-- Meta Pixel Code -->
 <script>
